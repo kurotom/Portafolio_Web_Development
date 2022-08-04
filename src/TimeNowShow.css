@@ -1,0 +1,10 @@
+#timeNow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  top: 10px;
+  border-bottom: 2px solid #789;
+}

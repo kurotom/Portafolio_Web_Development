@@ -1,0 +1,45 @@
+#divTitle {
+  background: #48484a;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  max-height: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+#divTitle h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  margin-top: 42px;
+  background-color: #eee;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #48484a;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+footer img {
+  width: 60px;
+  height: 30px;
+}
+
+footer a {
+  text-align: center;
+  text-decoration: none;
+}

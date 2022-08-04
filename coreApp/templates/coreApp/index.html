@@ -1,0 +1,43 @@
+{% extends 'coreApp/base.html' %}
+{% load static %}
+
+{% block title %}
+  App Compress PDF
+{% endblock %}
+
+{% block body %}
+
+  {% if messages %}
+    <div id='alertaBox' class="alert alert-danger">
+      {% for message in messages %}
+        {{ message }}
+      {% endfor %}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  {% endif %}
+
+  <div id="divForm" class="container-fluid">
+
+    <form enctype="multipart/form-data" action="{% url 'index' %}" method="POST">
+      {% csrf_token %}
+      {{ file.as_p }}
+      <input id="send" class="btn btn-outline-success" type="submit" value="upload">
+    </form>
+
+  </div>
+
+  <div id="desc" class="container">
+
+    <div class="h4" id="box">
+      Reduce the size of your pdfs in a few steps.
+    </div>
+    <div class="h4" id="box">
+      Easy and simple.
+    </div>
+    <div class="h4" id="box">
+      Minimalist design.
+    </div>
+
+  </div>
+
+{% endblock %}

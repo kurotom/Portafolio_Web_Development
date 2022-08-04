@@ -1,22 +1,16 @@
-# Proyectos Desarrollo Web
+# compressPDF
 
-Para el backend se utiliza lenguaje Python, framework Django, Django REST Framework.
-Para frontend se utiliza JavaScript, librería React.
-
-CSS, Bootstrap
+Web application that will allow you to compress your PDF files in a simple and intuitive way.
 
 
-## Full stack
+I have used:
 
-* movieApp
-* walletkeet_app
-* calculator
-* compress
-* todoApp
+* Python
+* Django
+* JavaScript
+* Bootstrap
+* HTML y CSS
 
-## Frontend (React)
 
-* React_weather_app
-* React_piano
-* React_webworker
 
+:point_right:   **https://compress-pdf.herokuapp.com/**

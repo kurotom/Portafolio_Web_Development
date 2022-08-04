@@ -1,0 +1,8 @@
+ghostscript
+setuptools
+whitenoise
+Django
+django-on-heroku
+whitenoise
+psycopg2
+gunicorn

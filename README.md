@@ -5,18 +5,18 @@ Para frontend se utiliza JavaScript, librería React.
 
 CSS, Bootstrap
 
+Las aplicaciones están desplegadas en Heroku y codepen.io.
 
 ## Full stack
 
-* movieApp
-* walletkeet_app
-* calculator
-* compress
-* todoApp
+* MovieApp
+* WalletKeep
+* CompressPDF
 
 ## Frontend (React)
 
-* React_weather_app
-* React_piano
-* React_webworker
+* Weather_app
+* Piano_app
+* Calculator_app
+
 

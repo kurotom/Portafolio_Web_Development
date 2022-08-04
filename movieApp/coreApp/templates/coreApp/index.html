@@ -1,0 +1,105 @@
+{% extends 'coreApp/base.html' %}
+{% load static %}
+
+{% block body %}
+
+  <div id='infoMovie' class="container" style="display: none;">
+    <div id='loading' class="">
+      <div class="spinner-grow text-info justify-content-center" role="status" style="width: 100px; height:100px;">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <button id='back_button' class="btn btn-outline-primary" type="button" name="button" style="display: none;">
+      <svg id="svgButton" width='30px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M8.31 189.9l176-151.1c15.41-13.3 39.69-2.509 39.69 18.16v80.05C384.6 137.9 512 170.1 512 322.3c0 61.44-39.59 122.3-83.34 154.1c-13.66 9.938-33.09-2.531-28.06-18.62c45.34-145-21.5-183.5-176.6-185.8v87.92c0 20.7-24.31 31.45-39.69 18.16l-176-151.1C-2.753 216.6-2.784 199.4 8.31 189.9z"/></svg>
+    </button>
+    <div id='infoDataMovie' class="" >
+    </div>
+  </div>
+
+
+  <div id="Contenido" class="container ">
+
+    {% for item in movie_Data %}
+      <div id="{{ item.id }}" class="itemContent">
+        <label id='movieID' hidden>{{ item.id  }}</label>
+
+        <div class="info_movie">
+          <div>
+            <h5 class='card-title'>{{ item.title }}</h5>
+          </div>
+          <div class='info_movie_body'>
+            <label class='card-text'>{{ item.date }}</label>
+            <div class='movie_body_star_vote'>
+              <span style='filter: drop-shadow(0px 2px 1px #bf9b30); display: flex; align-items: center;'>
+                <svg style='width: 20px; fill: gold;' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+              </span>
+              <label>{{ item.vote_average }}/10</label>
+            </div>
+          </div>
+        </div>
+
+        <div class='movie_content'>
+          <div class='movie_body'>
+            <div class='genres_div'>
+              {% for genre in item.genres %}
+              <a id='{{ genre.id }}' class='card_genres' href="{% url 'genre' genrename=genre.name %}">
+                <span>
+                  {{ genre.name }}
+                </span>
+              </a>
+              {% endfor %}
+            </div>
+
+            <div class='textOverview'>
+              <span>{{ item.overview }}</span>
+            </div>
+          </div>
+
+          <div class='divPoster'>
+            <img class='divPosterImg' src='{{ item.poster }}'></img>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+
+  </div>
+
+
+  <ul id="paginacion" class="pagination justify-content-center">
+    {% if page_object.has_previous %}
+      <li class="itemPage page-item">
+        <a class="page-link" href="?page=1">&laquo; first</a>
+      </li>
+      <li class="itemPage page-item">
+        <a class="page-link" href="?page={{ page_object.previous_page_number }}">{{ page_object.previous_page_number }}</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <a class="page-link" href="#">&laquo; first</a>
+      </li>
+    {% endif %}
+
+
+    <li class="page-item disabled">
+      <a class="page-link">
+        Page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+      </a>
+    </li>
+
+
+    {% if page_object.has_next %}
+      <li class="itemPage page-item">
+        <a class="page-link" href="?page={{ page_object.next_page_number }}">{{ page_object.next_page_number }}</a>
+      </li>
+      <li class="itemPage page-item">
+        <a class="page-link" href="?page={{ page_object.paginator.num_pages }}">last &raquo;</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <a class="page-link" href="#">last &raquo;</a>
+      </li>
+    {% endif %}
+  </ul>
+
+{% endblock %}

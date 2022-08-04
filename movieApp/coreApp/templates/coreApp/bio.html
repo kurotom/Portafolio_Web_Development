@@ -1,0 +1,81 @@
+<div id='${data.id}' class="">
+  <div >
+    <label class='h1'>
+      ${data.name}
+    </label>
+    <p class='p_bio'>
+      ${data.bio}
+    </p>
+  </div>
+
+  <table class='table'>
+    <tbody class='infoTableBody'>
+      <th>
+        ${data.name}
+      </th>
+      <tr class='imageTable'>
+        <td>
+          <img src="${data.profile_path}">
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Name
+        </th>
+        <td>
+          ${data.name}
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Born
+        </th>
+        <td>
+          ${data.place_of_birth}
+          ${data.birthday}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          Died
+        </th>
+        <td>
+          ${data.deathday}
+        </td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          Sex
+        </th>
+        <td>
+          ${data.gender}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          Known for department
+        </th>
+        <td>
+          ${data.known_for_department}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          IMDB
+        </th>
+        <td>
+          ${data.imdb_id}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          Homepage
+        </th>
+        <td>
+          ${data.homepage}
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

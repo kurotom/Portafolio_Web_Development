@@ -1,0 +1,18 @@
+{% extends 'coreApp/base.html' %}
+{% load static %}
+
+{% block body %}
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('#FondoFooter').style.cssText='position: fixed;'
+    })
+  </script>
+
+  <div class="container">
+    <p style="  display: flex; justify-content: center; position: relative; top: 150px;">
+      Ouch that hurt a lot.
+      <span>500. Try later please</span>
+    </p>
+  </div>
+{% endblock %}

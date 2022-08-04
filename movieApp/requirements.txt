@@ -1,0 +1,6 @@
+psycopg2
+gunicorn
+django
+django-on-heroku
+whitenoise
+requests

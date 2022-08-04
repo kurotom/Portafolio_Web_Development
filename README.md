@@ -12,11 +12,11 @@ Las aplicaciones están desplegadas en Heroku y codepen.io.
 * MovieApp
 * WalletKeep
 * CompressPDF
+* [Otros proyectos Full Stack](https://github.com/kurotom/cs50W_proyectos)
 
 ## Frontend (React)
 
 * Weather_app
 * Piano_app
 * Calculator_app
-
 

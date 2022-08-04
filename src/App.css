@@ -1,0 +1,143 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#Content {
+  display: flex;
+  justify-content: center;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 250px;
+  padding: 10px;
+  border: 5px solid darkblue;
+  background-color: lightslategray;
+}
+
+
+#pads {
+  display: grid;
+  grid-template-areas: "1 2 3 4";
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background-color: lightslategray;
+}
+#pads * {
+  min-width: 50px;
+  height: 50px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 1px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+
+#seven, #four, #one, #eight, #five, #two, #nine, #six, #three, #zero {
+  background-color: darkcyan;
+  color: white;
+}
+
+#add, #subtract, #multiply, #divide, #decimal {
+  background-color: silver;
+}
+
+
+
+
+#pads *:hover {
+  box-shadow: 0px 0px 8px orange;
+}
+
+#result {
+  background-color: #eee;
+  margin: 10px 0px 10px 0px;
+  height: 70px;
+  background-color: crimson;
+}
+
+#result #temp {
+  overflow: scroll;
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#result #temp::-webkit-scrollbar {
+  display: none;
+}
+#result #temp span {
+  text-align: right;
+}
+
+#display {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  font-size: 25px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#clear {
+  grid-area: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: red;
+}
+
+#seven, #four, #one {
+  grid-column: 1;
+}
+#eight, #five, #two {
+  grid-column: 2;
+}
+#nine, #six, #three {
+  grid-column: 3;
+}
+
+#zero {
+  grid-column: 1;
+}
+
+#add {
+  grid-column: 4;
+  grid-row: 3;
+}
+#subtract {
+  grid-column: 4;
+  grid-row: 4;
+}
+#multiply {
+  grid-column: 4;
+  grid-row: 2;
+}
+#divide {
+  grid-column: 4;
+  grid-row: 1;
+}
+#decimal {
+  grid-column: 2;
+}
+
+#equals {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: lightgreen;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+}

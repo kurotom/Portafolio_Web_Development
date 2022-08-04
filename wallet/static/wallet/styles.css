@@ -1,0 +1,274 @@
+
+.navbar.navbar-dark.bg-dark {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#container-web #index {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 60%;
+}
+
+#container-web #index ul {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+#container-web #index label {
+  text-align: justify !important;
+}
+#container-web #index li {
+  list-style: none;
+  padding: 5px;
+}
+.check {
+  color: green;
+}
+
+#ulLayout {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+#user {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.link-primary {
+  font-weight: bold;
+  text-decoration: none;
+}
+.link-primary:hover {
+  text-decoration: underline;
+}
+
+
+
+body {
+  background-color: #eee;
+}
+
+#alertContent {
+  justify-content: space-between;
+}
+#alertContent #alertItem {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#container-web h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#itemCenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#formLogin {
+  display: flex;
+  align-items: center;
+}
+#formLogin #divInputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 80%;
+}
+
+#formRegister {
+  justify-content: center;
+  align-items: center;
+}
+
+#formRegister #divInputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 80%;
+}
+
+
+#modalAdd, #modalExpense, #modalDelete {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+#modalAdd .modal-body #form, #modalExpense .modal-body #form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  row-gap: 8px;
+}
+
+#modalDelete #deleteform {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+#modalAdd .modal-footer, #modalExpense .modal-footer, #modalDelete .modal-footer {
+  padding: .15rem;
+}
+#modalAdd button, #modalExpense button, #modalDelete button {
+  border-radius: 0px 0px 4px 4px;
+}
+
+#container-web {
+  margin-top: 60px;
+}
+
+#barTitle {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+#titleWallet {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#div_wallet, #div_form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+  max-width: 200px;
+  min-height: 150px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex: 1 2 0px;
+  padding: 15px;
+  justify-content: space-between;
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 1px blue;
+  width: 100%;
+  height: 80%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#dataWalet {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+#dataWalet #name {
+}
+#dataWalet #amount {
+  font-weight: bold;
+  font-size: 20px;
+}
+#dataButtons {
+  width: 100%;
+  height: 30px;
+}
+
+
+#add, #out {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+}
+
+#delete {
+
+}
+
+#paginationAll {
+  display: flex;
+  justify-content: center;
+}
+
+#paginationAll .pagination {
+  column-gap: 20px;
+}
+
+#divall {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cartola {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+#cardDiv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin-bottom: 7px;
+  border-radius: 10px;
+}
+
+#buttonBox {
+  margin-bottom: 10px;
+}
+
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 60%;
+  border-top: solid 1px darkgray;
+  border-bottom: solid 1px darkgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#contenedor form {
+  display: flex;
+  flex-direction: column;
+  min-width: 70%;
+  max-width: 100%;
+  row-gap: 10px;
+}
+
+.submit {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}

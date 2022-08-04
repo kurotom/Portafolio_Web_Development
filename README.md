@@ -1,22 +1,5 @@
-# Proyectos Desarrollo Web
+# WalletKeep app
 
-Para el backend se utiliza lenguaje Python, framework Django, Django REST Framework.
-Para frontend se utiliza JavaScript, librería React.
+Simple web application, which will allow you to track expenses and income in individual "wallets" that you can create, delete. In addition to reviewing historical movements by type of operation (incoming|outgoing).
 
-CSS, Bootstrap
-
-
-## Full stack
-
-* movieApp
-* walletkeet_app
-* calculator
-* compress
-* todoApp
-
-## Frontend (React)
-
-* React_weather_app
-* React_piano
-* React_webworker
-
+:point_right:   **https://walletkeep-app.herokuapp.com**

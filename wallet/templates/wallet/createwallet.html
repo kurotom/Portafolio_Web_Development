@@ -1,0 +1,23 @@
+{% extends 'wallet/layout.html' %}
+{% load static %}
+
+{% block title %}
+  Create Wallet
+{% endblock %}
+
+{% block body %}
+
+  <div id="div_form" class="container container-lg">
+    <div id="contenedor" class="container-sm">
+      <form action='{% url "createwallet" %}' method="POST">
+        {% csrf_token %}
+        {{ formWallet }}
+        <div class="submit">
+          <input class="btn btn-success" type="submit" value="Create Wallet">
+          <a class="btn btn-danger" href="{% url 'wallet' %}">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

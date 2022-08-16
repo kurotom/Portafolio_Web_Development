@@ -4,7 +4,7 @@ Permite ver información del clima en tu ubicación (requiere de tu autorizació
 
 Alojado en Codepen.
 
-:point_right: [Ir ver](https://codepen.io/kurotom/pen/BarrbeR)
+:point_right: [Ir a ver](https://codepen.io/kurotom/pen/BarrbeR)
 
 
 ## Instrucciones

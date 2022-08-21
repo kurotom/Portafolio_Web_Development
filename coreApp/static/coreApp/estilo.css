@@ -22,6 +22,14 @@ nav .nav.justify-content-center {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+#divForm span {
+  font-size: 12px;
+  margin-top: 5px;
+  color: gray;
+  font-weight: bold;
 }
 
 #divForm form {
@@ -77,4 +85,8 @@ input[type="file"]{
 }
 #desc #box {
   flex: 2 2 auto;
+}
+.h4 {
+  width: 50px;
+  text-align: center;
 }

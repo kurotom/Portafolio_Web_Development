@@ -7,6 +7,7 @@ from django.http import JsonResponse
 from django.contrib import messages
 
 from .class_ghostscript.classghost import ConvertGS
+from .antivirusCheck.clamFileScan import ScanViruses
 import logging
 from datetime import datetime
 
@@ -31,43 +32,51 @@ def index(request):
 
 
     if request.method == "POST":
-        if request.FILES['file'].size < 50000000:
+        if request.FILES['file'].size < 20000000:
             formulario = upladFile(request.POST, request.FILES)
             if formulario.is_valid():
-                name = str(formulario.cleaned_data['file'].name).replace('.pdf', '')
-                title = f'{name}--{uuid.uuid4()}'
-                file = formulario.cleaned_data['file']
+                fileScan = ScanViruses(formulario.cleaned_data['file'].name)
+                result = fileScan.scan()
+                if result == 0:
+                    file = formulario.cleaned_data['file']
+                    name = str(formulario.cleaned_data['file'].name).replace('.pdf', '')
+                    title = f'{name}--{uuid.uuid4()}'
 
-                saveFile(file, title)
+                    saveFile(file, title)
 
-                fichero = f'{title}.pdf'
-                ficheroFinal = f'Compressed_{title}.pdf'
+                    fichero = f'{title}.pdf'
+                    ficheroFinal = f'Compressed_{title}.pdf'
 
-                ####                          ######
-                #####     Ghostscript Work     #####
-                ######                          ####
-                now = datetime.now()
-                ghost = ConvertGS(fichero, ficheroFinal)
-                g = ghost.excecute()
-                if g != 0:
-                    logging.basicConfig(
-                        format='%(levelname)s: %(asctime)s %(message)s',
-                        filename='convert_error.log',
-                        encoding='utf-8',
-                        level=logging.ERROR
-                    )
-                    logging.error(' ')
-                    logging.error(g)
-                ####                          ######
-                #####                          #####
-                ######                          ####
-                return HttpResponseRedirect(reverse(pdf, args=[ficheroFinal, fichero]))
+                    ####                          ######
+                    #####     Ghostscript Work     #####
+                    ######                          ####
+                    now = datetime.now()
+                    ghost = ConvertGS(fichero, ficheroFinal)
+                    g = ghost.excecute()
+                    if g != 0:
+                        logging.basicConfig(
+                            format='%(levelname)s: %(asctime)s %(message)s',
+                            filename='convert_error.log',
+                            encoding='utf-8',
+                            level=logging.ERROR
+                        )
+                        logging.error(' ')
+                        logging.error(g)
+                    ####                          ######
+                    #####                          #####
+                    ######                          ####
+                    return HttpResponseRedirect(reverse(pdf, args=[ficheroFinal, fichero]))
+                else:
+                    formulario = upladFile()
+                    f = formulario.cleaned_data['file'].name
+                    messages.add_message(request, messages.WARNING, f'{f} --- File Infected!')
             else:
                 return render(request, 'coreApp/index.html', {
                     "file": formulario
                 })
         else:
-            messages.add_message(request, messages.WARNING, 'Max file size 50 MB.')
+            formulario = upladFile()
+            messages.add_message(request, messages.WARNING, 'Max file size 20 MB.')
 
     return render(request, 'coreApp/index.html', {
         "file": upladFile,

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   itemContent.forEach(item => {
     item.addEventListener('click', () => {
-      console.log('click', item.getAttribute('id'))
+      // console.log('click', item.getAttribute('id'))
 
       let currentPosition = document.documentElement.scrollTop;
 
@@ -43,7 +43,7 @@ function consultaDatos(id, divCast, divContenido, divPaginas, positionY) {
   getData().then(response => {
     let cast = response.cast;
 
-    console.log(cast)
+    // console.log(cast)
 
     window.scrollTo(0, 0);
 
@@ -138,7 +138,7 @@ function consultaDatos(id, divCast, divContenido, divPaginas, positionY) {
 
 
         let idperson = item.getAttribute('id');
-        console.log('person', idperson);
+        // console.log('person', idperson);
         cargarBio(idperson);
 
       })
@@ -158,10 +158,10 @@ function cargarBio(personID) {
     return respuestaJSON;
   }
   getBio().then(response => {
-    console.log(response);
+    // console.log(response);
     let data = response.data
 
-    console.log(Object.keys(data))
+    // console.log(Object.keys(data))
 
     let modalDiv = document.querySelector('#modal');
     let modalbody = document.querySelector('#contentModalBody');
@@ -172,7 +172,7 @@ function cargarBio(personID) {
 
     modalDiv.style.display = 'flex';
 
-    console.log(data.age)
+    // console.log(data.age)
 
     let age = ``;
     if (data.age !== '') {
@@ -187,11 +187,11 @@ function cargarBio(personID) {
     } else {
       urlhomepage = ``;
     }
-   
+
 
     let stringModalBody = `
       <div id='${data.id}' class="bodyModalContent">
-        <div style='width: auto;'>
+        <div>
           <label class='h1'>
             ${data.name}
           </label>
@@ -201,14 +201,14 @@ function cargarBio(personID) {
           </p>
         </div>
 
-        <table class='table table-borderless' style='width: 190px;'>
+        <table class='table table-borderless'>
           <tbody class='infoTableBody'>
             <th style='font-size: 19px; text-align: center; display: flex; justify-content: center;'>
               ${data.name}
             </th>
             <tr class='imageTable'>
               <td>
-                <img src="${data.profile_path}" style="width: 150px;">
+                <img src="${data.profile_path}">
               </td>
             </tr>
             <tr>
@@ -260,8 +260,8 @@ function cargarBio(personID) {
                 Homepage
               </th>
               <td style="font-size: 88%; text-align: center; white-space: nowrap;">
-	        ${urlhomepage}
-	      </td>
+	               ${urlhomepage}
+	            </td>
             </tr>
 
           </tbody>

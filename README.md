@@ -5,4 +5,4 @@ Web application that shows information about movies, such as poster, plot, actor
 It uses The Movie Database (TMDB) API.
 
 
-:point_right:  **https://moviesview.herokuapp.com/**
+:point_right:  **https://moviesviewapp.herokuapp.com/**

@@ -5,6 +5,7 @@ Web application that shows information about movies, such as poster, plot, actor
 It uses The Movie Database (TMDB) API.
 
 - For backend, i used Python, Framework Django, I wrote the API application with this elements.
+	Use PostgreSQL database, for information of movies, for additional informations like biography, is consulted to The Movie Database API.
 - For frontend, i used JavaScript, CSS, Bootstrap.
 
 API have three endpoints, for now, i intend write new endpoints based on futures needs.

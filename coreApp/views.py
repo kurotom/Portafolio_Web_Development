@@ -35,9 +35,11 @@ def index(request):
         if request.FILES['file'].size < 20000000:
             formulario = upladFile(request.POST, request.FILES)
             if formulario.is_valid():
+
                 fileScan = ScanViruses(formulario.cleaned_data['file'].name)
                 result = fileScan.scan()
-                if result == 0:
+
+                if result == 0 or result == None:
                     file = formulario.cleaned_data['file']
                     name = str(formulario.cleaned_data['file'].name).replace('.pdf', '')
                     title = f'{name}--{uuid.uuid4()}'

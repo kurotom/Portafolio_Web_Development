@@ -16,12 +16,12 @@ Frontend - frontend branch:
 
 * Backend está desplegado en Render.
 
-[Repositorio backend](https://github.com/kurotom/backend_thelittlemarket)
+[Ir al repositorio backend](https://github.com/kurotom/backend_thelittlemarket)
 
 
 * Frontend está desplegado en Vercel.
 
-[Repositorio frontend](https://github.com/kurotom/frontend_thelittlemarket)
+[Ir al repositorio frontend](https://github.com/kurotom/frontend_thelittlemarket)
 
 
 :point_right: **[https://thelittlemarket-repo.vercel.app/](https://thelittlemarket-repo.vercel.app/)**

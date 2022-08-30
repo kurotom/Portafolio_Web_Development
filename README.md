@@ -1,23 +1,27 @@
-# Proyectos Desarrollo Web
+# The Little Market
 
-Para el backend se utiliza lenguaje Python, framework Django, Django REST Framework.
-Para frontend se utiliza JavaScript, librería React.
+Proyecto ecommerce, manejo de usuario, carrito de compra, productos, filtrados por categorías, paginación.
 
-CSS, Bootstrap
+Utiliza lenguaje Python, JavaScript, Bootstrap, HTML, CSS.
 
-Las aplicaciones están desplegadas en Heroku y codepen.io.
+Backend - backend branch:
+* Django
+* Django REST Framework
 
-## Full stack
-
-* [MovieApp](https://github.com/kurotom/Portafolio_Web_Development/tree/movieApp)
-* [WalletKeep](https://github.com/kurotom/Portafolio_Web_Development/tree/walletkeep)
-* [CompressPDF](https://github.com/kurotom/Portafolio_Web_Development/tree/compressPDF)
-* [Otros proyectos Full Stack](https://github.com/kurotom/cs50W_proyectos)
-
-## Frontend (React)
-
-* [Weather_app](https://github.com/kurotom/Portafolio_Web_Development/tree/weatherApp_react)
-* [Piano_app](https://github.com/kurotom/Portafolio_Web_Development/tree/piano_react)
-* [Calculator_app](https://github.com/kurotom/Portafolio_Web_Development/tree/calculator_react)
+Frontend - frontend branch:
+* React
 
 
+## Repositorios
+
+* Backend está desplegado en Render.
+
+[Repositorio backend](https://github.com/kurotom/backend_thelittlemarket)
+
+
+* Frontend está desplegado en Vercel.
+
+[Repositorio frontend](https://github.com/kurotom/frontend_thelittlemarket)
+
+
+:point_right: **[https://thelittlemarket-repo.vercel.app/](https://thelittlemarket-repo.vercel.app/)**

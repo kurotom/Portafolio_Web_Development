@@ -25,4 +25,4 @@ Frontend - frontend branch:
 
 ---
 
-### :point_right: **[https://thelittlemarket-repo.vercel.app/](https://thelittlemarket-repo.vercel.app/)**
+### :point_right: **[https://thelittlemarket.vercel.app/](https://thelittlemarket.vercel.app/)**

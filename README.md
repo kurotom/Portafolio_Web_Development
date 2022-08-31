@@ -23,5 +23,6 @@ Frontend - frontend branch:
 
 [Ir al repositorio frontend](https://github.com/kurotom/frontend_thelittlemarket)
 
+---
 
 ### :point_right: **[https://thelittlemarket-repo.vercel.app/](https://thelittlemarket-repo.vercel.app/)**

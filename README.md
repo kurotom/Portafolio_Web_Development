@@ -14,12 +14,12 @@ Frontend - frontend branch:
 
 ## Repositorios
 
-* Backend está desplegado en Render.
+* Backend está desplegado en Render.com.
 
 [Ir al repositorio backend](https://github.com/kurotom/backend_thelittlemarket)
 
 
-* Frontend está desplegado en Vercel.
+* Frontend está desplegado en Vercel.com.
 
 [Ir al repositorio frontend](https://github.com/kurotom/frontend_thelittlemarket)
 

@@ -1,0 +1,54 @@
+body {
+  background-color: #eee;
+}
+
+#screenComponent, #buttons, #screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#screenComponent {
+  height: 100vh;
+}
+
+h1 {
+  text-shadow: 0px 1px 2px #4682b4
+}
+
+#content {
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 50px;
+  text-shadow: 0px 1px 5px #ff4500;
+}
+
+#screen {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#buttons {
+  gap: 20px;
+}
+.btn {
+  font-weight: bold;
+}
+.btn:hover {
+  text-shadow: 1px 2px 3px black;
+}
+
+#right:hover {
+  box-shadow: 0px 2px 10px 5px darkgreen;
+}
+#left:hover {
+  box-shadow: 0px 2px 10px 5px red;
+}
+#reset:hover {
+  box-shadow: 0px 2px 10px 5px navy;
+}

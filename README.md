@@ -1,23 +1,16 @@
-# Proyectos Desarrollo Web
+# Contador
 
-Para el backend se utiliza lenguaje Python, framework Django, Django REST Framework.
-Para frontend se utiliza JavaScript, librería React.
+Contador utiliza React para los componentes y Redux para gestionar el estado de toda la aplicación.
 
-CSS, Bootstrap
 
-Las aplicaciones están desplegadas en Heroku y codepen.io.
+## Cómo ejecutar
 
-## Full stack
+```
+$ npm install
 
-* [MovieApp](https://github.com/kurotom/Portafolio_Web_Development/tree/movieApp)
-* [WalletKeep](https://github.com/kurotom/Portafolio_Web_Development/tree/walletkeep)
-* [CompressPDF](https://github.com/kurotom/Portafolio_Web_Development/tree/compressPDF)
-* [Otros proyectos Full Stack](https://github.com/kurotom/cs50W_proyectos)
+$ npm start
+```
 
-## Frontend (React)
-
-* [Weather_app](https://github.com/kurotom/Portafolio_Web_Development/tree/weatherApp_react)
-* [Piano_app](https://github.com/kurotom/Portafolio_Web_Development/tree/piano_react)
-* [Calculator_app](https://github.com/kurotom/Portafolio_Web_Development/tree/calculator_react)
+Ir a la dirección:  [http://localhost:3000](http://localhost:3000)
 
 

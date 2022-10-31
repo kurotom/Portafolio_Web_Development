@@ -10,20 +10,6 @@ Utiliza librería React y CSS.
     <img src="img/2.png" style="width: 200px; height: 250px;">
     <img src="img/2.png" style="width: 200px; height: 250px;">
 </div>
-<style>
-    #imagenes: {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 1rem;
-    }
-    #imagenes img {
-        width: 150px;
-        height: 200px;
-    }
-</style>
-
 
 
 Permite:

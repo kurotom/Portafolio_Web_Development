@@ -25,7 +25,7 @@ Diseño responsivo.
 
 Copiar el repositorio
 ```
-$ git clone --branch passwordgen URL
+$ git clone --branch passwordgen git@github.com:kurotom/Portafolio_Web_Development.git
 ```
 
 Instalar modulos

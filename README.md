@@ -22,3 +22,4 @@ Las aplicaciones están desplegadas en Render.com para backend, y para frontend 
 * [Piano_app](https://github.com/kurotom/Portafolio_Web_Development/tree/piano_react)
 * [Calculator_app](https://github.com/kurotom/Portafolio_Web_Development/tree/calculator_react)
 * [Contador_React-Redux](https://github.com/kurotom/Portafolio_Web_Development/tree/contador_react_redux)
+* [Password Generator](https://github.com/kurotom/Portafolio_Web_Development/tree/passwordgen)

@@ -6,10 +6,9 @@ Utiliza librería React y CSS.
 
 
 <div id="imagenes">
-    <img src="img/1.png" style="width: 150px; height: 200px;">
-    <img src="img/2.png">
-    <img src="img/2.png">
-
+    <img src="img/1.png" style="width: 200px; height: 250px;">
+    <img src="img/2.png" style="width: 200px; height: 250px;">
+    <img src="img/2.png" style="width: 200px; height: 250px;">
 </div>
 <style>
     #imagenes: {

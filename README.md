@@ -1,24 +1,54 @@
-# Proyectos Desarrollo Web
+# Password generator app
 
-Para el backend se utiliza lenguaje Python, framework Django, Django REST Framework.
-Para frontend se utiliza JavaScript, librería React.
+Apliación que genera contraseña aleatoriamente.
 
-CSS, Bootstrap
-
-Las aplicaciones están desplegadas en Render.com para backend, y para frontend en codepen.io o vercel.com.
-
-## Full stack
-
-* [MovieApp](https://github.com/kurotom/Portafolio_Web_Development/tree/movieApp)
-* [WalletKeep](https://github.com/kurotom/Portafolio_Web_Development/tree/walletkeep)
-* [CompressPDF](https://github.com/kurotom/Portafolio_Web_Development/tree/compressPDF)
-* [Otros proyectos Full Stack](https://github.com/kurotom/cs50W_proyectos)
-* [TheLittleMarket - ecommerce](https://github.com/kurotom/Portafolio_Web_Development/tree/thelittlemarket)
+Utiliza librería React y CSS.
 
 
-## Frontend (React)
+<div id="imagenes">
+    <img src="img/1.png">
+    <img src="img/2.png">
+    <img src="img/2.png">
 
-* [Weather_app](https://github.com/kurotom/Portafolio_Web_Development/tree/weatherApp_react)
-* [Piano_app](https://github.com/kurotom/Portafolio_Web_Development/tree/piano_react)
-* [Calculator_app](https://github.com/kurotom/Portafolio_Web_Development/tree/calculator_react)
-* [Contador_React-Redux](https://github.com/kurotom/Portafolio_Web_Development/tree/contador_react_redux)
+</div>
+<style>
+    #imagenes: {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+    #imagenes img {
+        width: 150px;
+        height: 200px;
+    }
+</style>
+
+
+
+Permite:
+* Copiar la contraseña generada o borrarla del portapapeles.
+* Seleccionar la longitud de la contraseña.
+* Seleccionar los grupos de carácteres que se utilizarán.
+
+Diseño responsivo.
+
+
+## ¿Cómo usar?
+
+
+Copiar el repositorio
+```
+$ git clone --branch passwordgen URL
+```
+
+Instalar modulos
+```
+$ npm install
+```
+
+Ejecutar la aplicación
+```
+$ npm start
+```

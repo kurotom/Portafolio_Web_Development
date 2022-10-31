@@ -5,10 +5,10 @@ Apliación que genera contraseña aleatoriamente.
 Utiliza librería React y CSS.
 
 
-<div id="imagenes">
+<div id="imagenes" style="flex-direction: row;display: flex;column-gap: 1rem;">
     <img src="img/1.png" style="width: 200px; height: 250px;">
     <img src="img/2.png" style="width: 200px; height: 250px;">
-    <img src="img/2.png" style="width: 200px; height: 250px;">
+    <img src="img/3.png" style="width: 200px; height: 250px;">
 </div>
 
 

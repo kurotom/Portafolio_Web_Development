@@ -1,3 +1,10 @@
+# Pausado mientras termino otros proyectos
+
+---
+---
+---
+
+
 # The Little Market
 
 Proyecto ecommerce, manejo de usuario, carrito de compra, productos, filtrados por categorías, paginación.
@@ -25,4 +32,4 @@ Frontend - frontend branch:
 
 ---
 
-### :point_right: **[https://thelittlemarket.vercel.app/](https://thelittlemarket.vercel.app/)**
+
